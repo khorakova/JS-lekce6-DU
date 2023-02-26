@@ -2,8 +2,6 @@
  datum ve formátu DD.MM.YYYY a vrátí objekt s jednotlivýnu částmi zadaného data. Příklad použití:
  */
 
-/** const datumVstup = prompt("Zadej datum ve formátu DD.MM.YYYY");
-
  const parseData = (datumVstup) => {
     let datum = {
         day: datumVstup.slice(0,2),
@@ -12,7 +10,8 @@
     }
     return datum
  }
-console.log(parseData(datumVstup)); */
+
+console.log(parseData('12.03.2015')); 
 
 /**
  Bez použití knihovny dayjs napište funkci formatDate, která na vstupu obdrží objekt představující 
@@ -24,7 +23,7 @@ Funkce vrátí řetězec představující datum ve formátu DD.MM.YYYY. Příkla
 V tomto cvičení se vám jistě bude hodit metoda padStart. Zkuste také uvnitř těla funkce použít destrukturování.
  */
 
-/** const formatDate = (date) => {
+ const formatDate = (date) => {
     const day = date.day.toString().padStart(2, 0);
     const month = date.month.toString().padStart(2, 0);
     const year = date.year;
@@ -49,7 +48,6 @@ const formatDate2 = (date) => {
 }
 
 formatDate2 ({ day: 6, month: 4, year: 2021 });
-*/
 
 /** Napište funkci jménem round, která bude zaokrouhlovat čísla na celé jednotky podle následujících pravidel.
 
